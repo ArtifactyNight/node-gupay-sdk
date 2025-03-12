@@ -1,0 +1,46 @@
+{
+  "name": "node-gupay-sdk",
+  "version": "1.0.0",
+  "description": "Unofficial GUPay SDK for Node.js",
+  "type": "module",
+  "main": "dist/main.js",
+  "engines": {
+    "node": ">= 22.11 < 23"
+  },
+  "devDependencies": {
+    "@eslint/js": "~9.17",
+    "@types/eslint__js": "~8.42.3",
+    "@types/node": "~20.17.24",
+    "@typescript-eslint/parser": "~8.19.1",
+    "eslint": "~9.17",
+    "eslint-config-prettier": "~9.1",
+    "globals": "~15.14",
+    "prettier": "~3.4.2",
+    "rimraf": "~6.0.1",
+    "ts-api-utils": "~2.0.1",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "~8.19.1"
+  },
+  "peerDependencies": {
+    "axios": "^1.7.7"
+  },
+  "scripts": {
+    "start": "node build/src/main.js",
+    "clean": "rimraf coverage build tmp",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint .",
+    "prettier": "prettier \"{src,__{tests}__}/**/*.{ts,mts}\" --config .prettierrc --write",
+    "prettier:check": "prettier \"{src,__{tests}__}/**/*.{ts,mts}\" --config .prettierrc --check"
+  },
+  "author": "Night <kidsanaphon.ka@proton.me>",
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "~2.8.1"
+  },
+  "volta": {
+    "node": "22.12.0"
+  }
+}
