@@ -9,9 +9,14 @@ Unofficial [GUPay](https://gupay.co/) SDK for Node.js - A TypeScript SDK for int
   - TrueMoney Wallet
   - TrueMoney Cashcard
   - Internet Banking (SCB, KTB, KBANK, BBL)
-  - PromptPay
+  - PromptPay (QR Code)
+  - LINE Pay *(Comingsoon)*
+  - Shopee Pay *(Comingsoon)*
+  - 12Call Cashcard *(Comingsoon)*
+  - AIS DCB *(Comingsoon)*
 - Axios-based HTTP client
 - Modern ES modules support
+- TypeScript-friendly
 
 ## Requirements
 
