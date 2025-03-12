@@ -1,6 +1,6 @@
 # node-gupay-sdk
 
-Unofficial GUPay SDK for Node.js - A TypeScript SDK for integrating GUPay payment services into your Node.js applications.
+Unofficial [GUPay](https://gupay.co/) SDK for Node.js - A TypeScript SDK for integrating GUPay payment services into your Node.js applications.
 
 ## Features
 
